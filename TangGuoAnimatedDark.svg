@@ -3,14 +3,30 @@
   <desc id="desc">Animated signature-style profile heading for Tang Guo.</desc>
   <rect width="3400" height="1180" fill="none"/>
   <g class="signature">
-    <path class="stroke s1" d="M380 405 C540 335 780 335 935 395 M665 360 C630 495 582 640 540 775" />
-    <path class="stroke s2" d="M785 585 C735 555 635 605 620 675 C610 725 642 748 692 724 C742 700 788 640 807 590 C786 666 790 730 836 730 C888 730 950 672 984 626" />
-    <path class="stroke s3" d="M1015 582 C966 640 918 705 905 742 C984 655 1070 590 1112 592 C1142 594 1128 632 1115 672 C1102 712 1110 740 1160 730 C1215 720 1278 668 1310 624" />
-    <path class="stroke s4" d="M1465 585 C1402 540 1304 610 1302 682 C1301 736 1365 758 1422 705 C1470 660 1498 596 1516 560 C1500 690 1450 846 1326 858 C1248 866 1190 820 1230 770" />
-    <path class="stroke s5" d="M1900 390 C1760 340 1595 435 1588 575 C1580 720 1735 805 1902 732 C1998 690 2058 610 2030 552 C2005 500 1910 508 1850 552 C1780 604 1755 705 1818 742 C1885 782 1988 730 2058 642" />
-    <path class="stroke s6" d="M2120 590 C2065 655 2045 722 2092 735 C2150 752 2228 660 2262 590 C2232 700 2268 742 2318 724 C2370 705 2430 665 2470 622" />
-    <path class="stroke s7" d="M2570 585 C2510 548 2405 600 2398 675 C2392 735 2460 754 2520 705 C2572 662 2600 610 2612 585 C2608 690 2670 752 2758 725 C2850 696 2912 612 2900 552 C2888 500 2810 510 2772 570 C2730 638 2775 725 2870 730" />
-    <path class="underline" d="M560 835 C930 950 2095 958 2795 830" />
+    <path class="stroke" stroke-dasharray="10000 10000" stroke-dashoffset="10000" d="M380 405 C540 335 780 335 935 395 M665 360 C630 495 582 640 540 775">
+      <animate id="draw1" attributeName="stroke-dashoffset" from="10000" to="0" begin="1s" dur="650ms" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".12,0,.39,0"/>
+    </path>
+    <path class="stroke" stroke-dasharray="10000 10000" stroke-dashoffset="10000" d="M785 585 C735 555 635 605 620 675 C610 725 642 748 692 724 C742 700 788 640 807 590 C786 666 790 730 836 730 C888 730 950 672 984 626">
+      <animate id="draw2" attributeName="stroke-dashoffset" from="10000" to="0" begin="draw1.end" dur="520ms" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".12,0,.39,0"/>
+    </path>
+    <path class="stroke" stroke-dasharray="10000 10000" stroke-dashoffset="10000" d="M1015 582 C966 640 918 705 905 742 C984 655 1070 590 1112 592 C1142 594 1128 632 1115 672 C1102 712 1110 740 1160 730 C1215 720 1278 668 1310 624">
+      <animate id="draw3" attributeName="stroke-dashoffset" from="10000" to="0" begin="draw2.end" dur="520ms" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".12,0,.39,0"/>
+    </path>
+    <path class="stroke" stroke-dasharray="10000 10000" stroke-dashoffset="10000" d="M1465 585 C1402 540 1304 610 1302 682 C1301 736 1365 758 1422 705 C1470 660 1498 596 1516 560 C1500 690 1450 846 1326 858 C1248 866 1190 820 1230 770">
+      <animate id="draw4" attributeName="stroke-dashoffset" from="10000" to="0" begin="draw3.end" dur="650ms" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".12,0,.39,0"/>
+    </path>
+    <path class="stroke" stroke-dasharray="10000 10000" stroke-dashoffset="10000" d="M1900 390 C1760 340 1595 435 1588 575 C1580 720 1735 805 1902 732 C1998 690 2058 610 2030 552 C2005 500 1910 508 1850 552 C1780 604 1755 705 1818 742 C1885 782 1988 730 2058 642">
+      <animate id="draw5" attributeName="stroke-dashoffset" from="10000" to="0" begin="draw4.end" dur="760ms" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".12,0,.39,0"/>
+    </path>
+    <path class="stroke" stroke-dasharray="10000 10000" stroke-dashoffset="10000" d="M2120 590 C2065 655 2045 722 2092 735 C2150 752 2228 660 2262 590 C2232 700 2268 742 2318 724 C2370 705 2430 665 2470 622">
+      <animate id="draw6" attributeName="stroke-dashoffset" from="10000" to="0" begin="draw5.end" dur="520ms" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".12,0,.39,0"/>
+    </path>
+    <path class="stroke" stroke-dasharray="10000 10000" stroke-dashoffset="10000" d="M2570 585 C2510 548 2405 600 2398 675 C2392 735 2460 754 2520 705 C2572 662 2600 610 2612 585 C2608 690 2670 752 2758 725 C2850 696 2912 612 2900 552 C2888 500 2810 510 2772 570 C2730 638 2775 725 2870 730">
+      <animate id="draw7" attributeName="stroke-dashoffset" from="10000" to="0" begin="draw6.end" dur="650ms" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".12,0,.39,0"/>
+    </path>
+    <path class="underline" stroke-dasharray="10000 10000" stroke-dashoffset="10000" d="M560 835 C930 950 2095 958 2795 830">
+      <animate id="draw8" attributeName="stroke-dashoffset" from="10000" to="0" begin="draw7.end" dur="720ms" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".12,0,.39,0"/>
+    </path>
   </g>
   <style>
     .signature {
@@ -27,9 +43,6 @@
       stroke-width: 18;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke-dasharray: 5000;
-      stroke-dashoffset: 5000;
-      animation: drawText 650ms cubic-bezier(.12,0,.39,0) forwards;
     }
 
     .underline {
@@ -37,25 +50,6 @@
       stroke-width: 24;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke-dasharray: 5000;
-      stroke-dashoffset: 5000;
-      animation: drawLine 720ms 3.9s cubic-bezier(.12,0,.39,0) forwards;
-    }
-
-    .s1 { animation-delay: 350ms; }
-    .s2 { animation-delay: 850ms; }
-    .s3 { animation-delay: 1.25s; }
-    .s4 { animation-delay: 1.7s; }
-    .s5 { animation-delay: 2.2s; }
-    .s6 { animation-delay: 2.8s; }
-    .s7 { animation-delay: 3.25s; }
-
-    @keyframes drawText {
-      to { stroke-dashoffset: 0; }
-    }
-
-    @keyframes drawLine {
-      to { stroke-dashoffset: 0; }
     }
 
     @keyframes settle {
@@ -69,16 +63,8 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .stroke, .underline, .signature {
+      .signature {
         animation: none;
-      }
-
-      .stroke {
-        stroke-dashoffset: 0;
-      }
-
-      .underline {
-        stroke-dashoffset: 0;
       }
     }
   </style>
